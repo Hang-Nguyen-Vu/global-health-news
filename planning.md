@@ -55,6 +55,10 @@ Font: Roboto
 Font color:
 Font size: 28px
 
+H3 headers
+Font: Roboto
+Font color:
+Font size: 24px
 
 Paragraph text
 Font: Roboto

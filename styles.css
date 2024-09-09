@@ -23,6 +23,14 @@ header {
     align-items: center;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
 h1 {
     font-size: 36px;
     color: #DDAF94;
@@ -45,6 +53,7 @@ nav a {
     text-decoration: none;
     color: #DDAF94;
     font-weight: 400;
+    font-size: 18px;
 }
 
 img {
@@ -57,4 +66,108 @@ main {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resource-list li {
+    border: solid 3px #DDAF94;
+    padding: 15px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+.resource-list li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.catchlines {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.single-catchline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 28px;
+    padding: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #4F4846;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    width: fit-content;
+    width: 15px;
+    height: 15px;
+    border: solid 1px #4F4846;
+}
+
+button {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    color: #DDAF94;
+    background-color: #266150;
+    text-transform: uppercase;
+    font-weight: 800px;
+    font-size: 24px;
+}
+
+@media (min-width: 375px) and (max-width: 991px) {
+    body {
+        padding: 40px 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding: 40px 200px;
+        gap: 100px;
+    }
+
+    .catchlines {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
